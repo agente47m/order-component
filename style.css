@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+--Size-Radius-Card: 15px;
+}
+
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+
+    background-color: var(--Very-pale-blue);
+}
+
+.main{
+    width: 335px;
+    margin: 60px auto;
+    background-color: white;
+    border-radius:var(--Size-Radius-Card);
+    box-shadow: 0px 10px 30px var(--Desaturated-blue)
+
+}
+.banner__img{
+    border-top-left-radius: var(--Size-Radius-Card);
+    border-top-right-radius: var(--Size-Radius-Card);
+    width: 100%;
+    
+}
+
+.order{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.order__titulo{
+    color: var(--Dark-blue);
+    font-weight:bolder;
+    font-size: 1.5em;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.order__descripcion{
+    text-align: center;
+    font-weight:100;
+    color: var(--Desaturated-blue);
+    line-height: 23px; /*/ espacio interlienado */
+    
+}
+.order__price{
+    margin-top: 30px;
+    background-color:var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.order__price-img-container{
+    padding-left: 20px;
+}
+.order__price-plan{
+    font-weight: bold;
+    font-size:14px;
+    color: var(--Dark-blue);
+}
+.order__price-price{
+   font-weight:400;
+   font-size:0.8em;
+   
+   color: var(--Desaturated-blue);
+}
+.order__price-change{
+    padding-right: 20px;
+    font-weight:400;
+   font-size: small;
+   color: var(--Bright-blue);
+   text-decoration: underline;
+}
+.order__price-change:hover{
+    cursor: pointer;
+}
+
+
+.order-acction{
+    margin-top: 30px;
+    
+
+}
+.order-acction-payment{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color:white;
+    font-size:1em;
+    font-weight: bold;
+    background-color: var(--Bright-blue);
+    border: none;/* quitar contorno del boton*/
+    box-shadow: 0px 10px 6px var(--Pale-blue);
+    
+    
+
+
+    
+}
+
+.order-acction-payment:hover{
+    background-color: var(--Dark-blue);
+    cursor: pointer;
+    
+}
+.order-acction-cancel{
+    padding-bottom: 40px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Desaturated-blue);
+    font-weight: bold;
+}
+.order-acction-cancel:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    
+    body{
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-repeat:no-repeat;
+        background-size:cover
+    }
+    
+}
